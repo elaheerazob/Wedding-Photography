@@ -3,7 +3,7 @@ import { Card,Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Service = ({service}) => {
-  console.log(service);
+//   console.log(service);
   const { id, img, review, price, name } = service;
   const navigate =useNavigate();
 
