@@ -1,44 +1,23 @@
 [
     {
-      "id": 1001,
-      "price" : 500,
-      "name": "Md Khan",
-      "review": "Bandarban has been the most beautiful tourist destination of Bangladesh in recent years. Nature has adorned this region with its magnificent and splendid green ornaments. Beauty is scattered everywhere of Bandarban in magnanimous mood.",
-      "img": "https://randomuser.me/api/portraits/men/12.jpg"
-    },
-    {
-      "id": 1002,
-      "name": "Md Ridwan",
-      "price" : 1000,
-      "review": "Bandarban hill district is a hub for Natural beauties. The whole landscape is  covered with the zigzag courses of hills. There are 11 ethnic diversities herein Bandarban creating a versatile color of life. Shangu and Matamuhuri, these two rivers with their",
-      "img": "https://randomuser.me/api/portraits/men/27.jpg"
-    },
-    {
-      "id": 1003,
-      "name": "Md Arif",
-      "price" : 2000,
-      "review": "One will find the virgin beauty of Bandarban on every step he or she advances. Nature is extravagant here. Behind the name of Bandarban there is an overwhelming story. Long time ago this district was a great natural",
-      "img": "https://randomuser.me/api/portraits/men/19.jpg"
-    },
-    {
       "id": 1004,
-      "name": "Md Pollob",
-      "price" : 3000,
-      "review": "Bandarban hill district is a hub for Natural beauties. The whole landscape is  covered with the zigzag courses of hills. There are 11 ethnic diversities herein Bandarban creating a versatile color of life. Shangu and Matamuhuri, these two rivers with their",
-      "img": "https://randomuser.me/api/portraits/men/47.jpg"
+      "name": "FIVE HOURS",
+      "price" : 560,
+      "review": "Sometimes you don't need to go over the top, and a half day might just do the trick. This covers from the ceremony up to the wedding breakfast, including group shot",
+      "img": "https://images.squarespace-cdn.com/content/v1/5ca3511f11f78419cf065b0a/1555500930314-3WLUOLYY61S1KMP7FNTO/Fiona_Nathan_wedding257.jpg?format=750w"
     },
     {
       "id": 1005,
-      "name": "Md Nasir",
-      "price" : 5000,
-      "review": "Bandarban hill district is a hub for Natural beauties. The whole landscape is  covered with the zigzag courses of hills. There are 11 ethnic diversities herein Bandarban creating a versatile color of life. Shangu and Matamuhuri, these two rivers with their",
-      "img": "https://randomuser.me/api/portraits/men/42.jpg"
+      "name": "TEN HOURS",
+      "price" : 1220,
+      "review": "By far the most popular choice. Typically, this starts from the bride's pre-wedding preparation and runs until the first dance. A FREE HANDMADE WOODEN USB BOX worth £165 is included in this package",
+      "img": "https://images.squarespace-cdn.com/content/v1/5ca3511f11f78419cf065b0a/1555500523175-DUF739BKDRIQ3L4IENR2/Josh-Louise-Wedding-15-07-17-300-W.jpg?format=750w"
     },
     {
       "id": 1006,
-      "price" : 7000,
-      "name": "Md Razob",
-      "review": "Bandarban hill district is a hub for Natural beauties. The whole landscape is  covered with the zigzag courses of hills. There are 11 ethnic diversities herein Bandarban creating a versatile color of life. Shangu and Matamuhuri, these two rivers with their",
-      "img": "https://randomuser.me/api/portraits/men/55.jpg"
+      "price" : 2000,
+      "name": "Twelve Hours",
+      "review": "For me, every wedding is a story, so I'll cover it from start to finish. When I say all day cover, this will capture the bride's pre-wedding preparation until the evening fireworks and late into the evening. A FREE HANDMADE WOODEN USB BOX worth £165 is included in this package.",
+      "img": "https://images.squarespace-cdn.com/content/v1/5ca3511f11f78419cf065b0a/1555500659037-6TJC0FLARR0HJBR8AW2I/Gemma-Tom-Wedding-16-09-17-461-W.jpg?format=750w"
     }
   ]

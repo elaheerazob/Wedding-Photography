@@ -65,7 +65,8 @@ const Login = () => {
         }
     }
   return (
-    <div className="w-50 mx-auto">
+    <div className="w-50 mx-auto box-style p-4 mt-5">
+        <h1 className="text-center  ">Login</h1>
       <Form onSubmit={handelLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -77,7 +78,7 @@ const Login = () => {
           <Form.Control onChange={handelPasswordChange} type="password" placeholder="Password" />
         </Form.Group>
         
-        <Button variant="primary" type="submit">
+        <Button className="w-100" variant="primary" type="submit">
           Login
         </Button>
       </Form>
