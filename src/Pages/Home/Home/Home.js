@@ -4,6 +4,7 @@ import slider1 from '../../../Image/Slider/1.jpg'
 import slider2 from '../../../Image/Slider/2.png'
 import slider3 from '../../../Image/Slider/3.jpg'
 import slider4 from '../../../Image/Slider/4.jpg'
+import Services from "../Services/Services";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
           />
         </Carousel.Item>
       </Carousel>
+      <Services></Services>
     </div>
   );
 };
