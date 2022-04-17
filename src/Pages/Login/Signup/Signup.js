@@ -3,6 +3,7 @@ import { Button, Form } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebse.init";
+import Social from "../Social/Social";
 
 const Signup = () => {
     const [email, setEmail] = useState('');
@@ -83,6 +84,7 @@ const Signup = () => {
         <Button variant="primary" type="submit">
           Submit
         </Button>
+        <Social></Social>
       </Form>
     </div>
   );
