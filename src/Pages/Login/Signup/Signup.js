@@ -36,7 +36,7 @@ const Signup = () => {
         }
     }, [user])
 
-    
+
     const handleCreateUser = event =>{
         event.preventDefault();
         if(password !== confirmPassword){
@@ -51,7 +51,7 @@ const Signup = () => {
         createUserWithEmailAndPassword(email, password);
     }
   return (
-    <div>
+    <div className="w-50 mx-auto">
       <Form onSubmit={handleCreateUser}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>

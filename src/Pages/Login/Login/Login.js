@@ -32,13 +32,13 @@ const Login = () => {
     },[user])
     
 
-    const handelSubmit = e =>{
+    const handelLogin = e =>{
         e.preventDefault();
         signInWithEmailAndPassword(email,password);
     }
   return (
     <div className="w-50 mx-auto">
-      <Form onSubmit={handelSubmit}>
+      <Form onSubmit={handelLogin}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control onChange={handelEmailChange} type="email" placeholder="Enter email" />
@@ -50,7 +50,7 @@ const Login = () => {
         </Form.Group>
         
         <Button variant="primary" type="submit">
-          Submit
+          Login
         </Button>
       </Form>
     </div>

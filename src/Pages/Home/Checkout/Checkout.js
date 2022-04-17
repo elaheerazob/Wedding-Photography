@@ -3,37 +3,41 @@ import { Button, Form } from "react-bootstrap";
 
 const Checkout = () => {
   return (
-    <div>
+    <div className="w-50 mx-auto">
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Name</Form.Label>
           <Form.Control
-            onChange={handleEmailChange}
+            type="text"
+            placeholder="Your Name"
+          />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
             type="email"
-            placeholder="Enter email"
+            placeholder="Your Email"
           />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>Your Address</Form.Label>
           <Form.Control
-            onChange={handlePasswordChange}
-            type="password"
-            placeholder="Password"
+            type="text"
+            placeholder="Your Address"
           />
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>Number</Form.Label>
           <Form.Control
-            onChange={handleConfirmPasswordChange}
-            type="password"
-            placeholder="Confirm Password"
+            type="number"
+            placeholder="Your Number"
           />
         </Form.Group>
-        <p style={{ color: "red" }}>{error}</p>
-        <Button variant="primary" type="submit">
-          Submit
+        <Button className="w-100" variant="primary" type="checkout">
+        Checkout
         </Button>
       </Form>
     </div>
