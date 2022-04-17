@@ -6,6 +6,7 @@ import { toast, ToastContainer } from "react-toastify";
 import auth from "../../../firebse.init";
 import Social from "../Social/Social";
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from "../../Share/Loading/Loading";
 
 const Login = () => {
     const [email,setEmail] =useState('');
@@ -19,8 +20,9 @@ const Login = () => {
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const navigate = useNavigate();
     const location = useLocation();
+    let errorElement;
     const from = location.state?.from?.pathname || '/';
-
+    
     const handelEmailChange = e =>{
         setEmail(e.target.value);
     }
@@ -34,16 +36,23 @@ const Login = () => {
             navigate(from, {replace: true});
         }
     },[user])
-    
 
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
+
+    
+    if (error) {
+        errorElement = <p className='text-danger'>Error: {error?.message}</p>
+    }
     const handelLogin = e =>{
         e.preventDefault();
         signInWithEmailAndPassword(email,password);
     }
 
-    const navigateRegister = event => {
-        navigate('/signup');
-    }
+    // const navigateRegister = event => {
+    //     navigate('/signup');
+    // }
 
     const resetPassword = async () => {
         
@@ -72,7 +81,8 @@ const Login = () => {
           Login
         </Button>
       </Form>
-      <p>New to Wedding Photography? <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
+      {errorElement}
+      <p>New to Wedding Photography? <Link to="/signup" className='text-primary pe-auto text-decoration-none'>Please Register</Link> </p>
 
         <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
       <Social></Social>

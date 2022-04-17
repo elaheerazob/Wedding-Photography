@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../../firebse.init";
+import Loading from "../../Share/Loading/Loading";
 import Social from "../Social/Social";
 
 const Signup = () => {
@@ -30,6 +31,10 @@ const Signup = () => {
 
     const navigate = useNavigate();
     const location =useLocation();
+
+    const navigateLogin = () => {
+        navigate('/login');
+    }
     const from = location.state?.from?.pathname || "/";
     useEffect(() => {
         if (user) {
@@ -38,6 +43,9 @@ const Signup = () => {
     }, [user])
 
 
+    if(loading){
+        return <Loading></Loading>
+    }
     const handleCreateUser = event =>{
         event.preventDefault();
         if(password !== confirmPassword){
@@ -84,8 +92,10 @@ const Signup = () => {
         <Button variant="primary" type="submit">
           Submit
         </Button>
-        <Social></Social>
+        
       </Form>
+      <p>Already have an account? <Link to="/login" className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link> </p>
+      <Social></Social>
     </div>
   );
 };
