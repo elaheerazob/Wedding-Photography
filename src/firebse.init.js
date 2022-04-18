@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDIFUizaMkBHi6HWxBpmtDuiDlF-uv_LWA",
-  authDomain: "photographer-d0421.firebaseapp.com",
-  projectId: "photographer-d0421",
-  storageBucket: "photographer-d0421.appspot.com",
-  messagingSenderId: "889055282973",
-  appId: "1:889055282973:web:86055baec8a8a5057503f4"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
