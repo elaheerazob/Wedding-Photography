@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import auth from "../../../firebse.init";
 import camra1 from '../../../Image/camera (1).png'
 
+
 const Header = () => {
   const [user] = useAuthState(auth);
   const handleSignOut = ()=>{

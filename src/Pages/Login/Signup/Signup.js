@@ -90,7 +90,7 @@ const Signup = () => {
           />
         </Form.Group>
         <p style={{color: 'red'}}>{error}</p>
-        <Button className="w-100" variant="primary" type="submit">
+        <Button className="w-100 btn btn-dark" variant="primary" type="submit">
           Submit
         </Button>
         

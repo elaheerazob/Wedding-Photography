@@ -13,7 +13,7 @@ const Service = ({service}) => {
   } 
   return (
     
-     <div className="g-5 p-5 col-sm-12 col-md-6 col-lg-4 box-style">
+     <div className=" gx-5 col-sm-12 col-md-6 col-lg-4 box-style">
          
      <Card>
         <Card.Img variant="top" className="w-100" src={img} />
@@ -25,7 +25,7 @@ const Service = ({service}) => {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <Button onClick={() =>handelToserviceDetail(id)} className="text-body w-100 ">Book Now</Button>
+          <Button onClick={() =>handelToserviceDetail(id)} className=" w-100 btn btn-dark">Book Now</Button>
         </Card.Footer>
       </Card>
      </div>

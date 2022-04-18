@@ -35,14 +35,14 @@ const Social = () => {
             <div className=''>
                 <button
                     onClick={() => signInWithGoogle()}
-                    className='btn btn-info w-50 d-block mx-auto my-2'>
+                    className='btn btn-dark w-50 d-block mx-auto my-2 '>
                     <img  src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
                
                 <button
                     onClick={() => signInWithGithub()}
-                    className='btn btn-info w-50 d-block mx-auto'>
+                    className='btn btn-dark w-50 d-block mx-auto '>
                     <img  src={github} alt="" />
                     <span className='px-2'>Github Sign In</span>
                 </button>

@@ -36,7 +36,7 @@ const Checkout = () => {
             placeholder="Your Number"
           />
         </Form.Group>
-        <Button className="w-100" variant="primary" type="checkout">
+        <Button className="w-100 button-style" variant="primary" type="checkout">
         Checkout
         </Button>
       </Form>

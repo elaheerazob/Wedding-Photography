@@ -78,7 +78,7 @@ const Login = () => {
           <Form.Control onChange={handelPasswordChange} type="password" placeholder="Password" />
         </Form.Group>
         
-        <Button className="w-100" variant="primary" type="submit">
+        <Button className="w-100 btn btn-dark " variant="primary" type="submit">
           Login
         </Button>
       </Form>
